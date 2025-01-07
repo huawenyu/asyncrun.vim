@@ -11,7 +11,7 @@ function M.reset()
       vim.notify("Delete existing terminal", "info")
     end
     M._asyncrun_term:shutdown()
-    vim.api.nvim_del_keymap("n", M._asyncrun_mapping)
+    -- vim.api.nvim_del_keymap("n", M._asyncrun_mapping)
   end
 
   M._asyncrun_term = nil
